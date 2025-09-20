@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-[calc(100vh-73px)]">
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center py-20 px-4 bg-gradient-to-b from-background to-muted">
+      <section className="flex flex-col items-center justify-center text-center py-20 px-4 bg-gradient-to-b from-gray-900 via-gray-800 to-black">
         <h1 className="text-5xl md:text-6xl font-bold mb-4">
           Hi, I&apos;m <span className="text-primary">Godwin</span>.
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl">
-          Cyber Security Analyst | Software Engineer
+          Software Engineer
         </p>
         <div className="flex gap-4">
           <Link href="/contact">
@@ -32,9 +32,9 @@ export default function Home() {
               <div className="border rounded-lg p-6 h-full transition-all hover:shadow-md hover:border-primary">
                 <div className="flex items-center mb-4">
                   <Image src="/file.svg" alt="About" width={24} height={24} />
-                  <h2 className="text-2xl font-semibold ml-2">About Me</h2>
+                  <h2 className="text-2xl font-semibold ml-2">About me</h2>
                 </div>
-                <p className="text-muted-foreground">Learn more about my background, skills, and experience in software engineering and cyber security.</p>
+                <p className="text-muted-foreground">Learn more about my background, skills, and experience in software engineering</p>
               </div>
             </Link>
             
@@ -44,7 +44,7 @@ export default function Home() {
                   <Image src="/window.svg" alt="Projects" width={24} height={24} />
                   <h2 className="text-2xl font-semibold ml-2">Projects</h2>
                 </div>
-                <p className="text-muted-foreground">View my portfolio of projects, including software applications and security solutions.</p>
+                <p className="text-muted-foreground">View my portfolio of projects, including software application.</p>
               </div>
             </Link>
             

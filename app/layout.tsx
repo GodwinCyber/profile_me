@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/layout/Navbar";
-import { AuthProvider } from "./context/AuthContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Profile",
-  description: "Personal profile and portfolio website",
+  title: "Stephen | Portfolio",
+  description: "Personal portfolio website showcasing projects and skills",
 };
 
 export default function RootLayout({
@@ -25,16 +24,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" style={{ "--line-color": "#FFF" } as React.CSSProperties}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white relative z-0`}
       >
-        <AuthProvider>
-          <Navbar />
-          <main className="container mx-auto py-8 px-4">
-            {children}
-          </main>
-        </AuthProvider>
+        <div id="root">
+          <div className="relative z-0">
+            <Navbar />
+            <main className="sm:px-16 px-6 w-full max-w-7xl mx-auto">
+              {children}
+            </main>
+          </div>
+        </div>
       </body>
     </html>
   );

@@ -3,50 +3,55 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto py-12 px-4">
-      <h1 className="text-4xl font-bold mb-8">About Me</h1>
+      <h1 className="text-4xl font-bold mb-8"></h1>
       
-      <div className="flex flex-col md:flex-row gap-8 mb-12">
-        <div className="md:w-1/3 flex justify-center">
-          {/* Placeholder for profile image - replace with your actual image */}
-          <div className="w-64 h-64 rounded-full bg-muted flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
+      {/* Profile Image at the top */}
+      {/* <div className="flex-row justify-evenly mb-16">
+        <div className="w-100 h-100 bg-gray-50 rounded-xl shadow-md p-10 flex items-center justify-evenly">
+          <div className="w-100px h-80 rounded-xl overflow-hidden border-2 border-gray-300">
+            <Image 
+              src="/profile.png" 
+              alt="Profile Photo" 
+              width={256} 
+              height={256} 
+              className="object-cover w-full h-full"
+              priority
+            />
           </div>
         </div>
-        
-        <div className="md:w-2/3">
-          <h2 className="text-2xl font-semibold mb-4">Personal Introduction</h2>
-          <p className="text-lg mb-4">
-            I'm Godwin, a passionate Cyber Security Analyst and Software Engineer with a strong focus on building secure, efficient applications. I enjoy solving complex problems and creating innovative solutions that make a difference.
-          </p>
-          <p className="text-lg">
-            With expertise in both offensive and defensive security practices, as well as full-stack development, I bring a unique perspective to every project I work on.
-          </p>
-        </div>
+      </div> */}
+      
+      {/* Personal Introduction Section */}
+      <div className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4 text-center">Personal Introduction</h2>
+        <p className="text-lg mb-4">
+          I'm Godwin, an experienced Software Engineer with a strong background in building robust and scalable applications for both web and mobile. My work spans FinTech and SaaS environments, where I focus on delivering secure, efficient, and reusable solutions. I'm skilled in modern JavaScript stacks and Python-based technologies, with deep expertise in database modeling and management-critical for financial and enterprise-grade systems.
+        </p>
+        <p className="text-lg">
+          Having contributed to high-impact platforms and cyber-resilient infrastructures, I'm committed to continuous improvement, adaptability, and creating high-quality solutions that prioritize performance, security, and user experience. With expertise in backend engineering and full-stack development, I bring a strong focus on building scalable architectures, efficient APIs, and reliable database solutions, giving every project I work on a solid and impactful foundation.
+        </p>
       </div>
       
+      {/* Background and Skills Section */}
       <div className="grid md:grid-cols-2 gap-6 mb-12">
         <div className="p-6 border rounded-lg shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4">My Journey</h2>
+          <h2 className="text-2xl font-semibold mb-4">Background</h2>
           <p className="mb-2">
-            My career in technology began with a fascination for how systems work and how they can be secured. This led me to pursue education in computer science with a specialization in cybersecurity.
+            My career in technology began with a fascination for how systems work and function. This curiosity led me to transition into software engineering, where I chose to specialize in backend development.
           </p>
           <p>
-            Throughout my career, I've worked on various projects ranging from web applications to security infrastructure, always focusing on creating robust and secure solutions.
+            Throughout my career, I have contributed to a variety of projects, from web applications to mobile solutions, with a consistent focus on building robust, scalable, and secure systems.
           </p>
         </div>
         
         <div className="p-6 border rounded-lg shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4">Core Skills</h2>
+          <h2 className="text-2xl font-semibold mb-4">Skills</h2>
           <ul className="list-disc pl-5 space-y-2">
-            <li>Penetration Testing & Vulnerability Assessment</li>
-            <li>Secure Application Development</li>
-            <li>Full-Stack Web Development</li>
-            <li>Network Security & Monitoring</li>
-            <li>Incident Response</li>
-            <li>Cloud Security (AWS, Azure)</li>
+            <li>Programming Languages: JavaScript, TypeScript, Python</li>
+            <li>Backend Frameworks & Technologies: Node.js, Hono.js, Express.js, NestJS, Flask, Django, Django REST Framework</li>
+            <li>Database & ORM Tools: MySQL, PostgreSQL (Neon DB, Supabase), MongoDB, SQLite3, Drizzle ORM, SQLAlchemy ORM</li>
+            <li>Backend Utilities & Tools: Redis, Celery, Git (Version Control), Zod Validator, Sentry, Grafana</li>
+            <li>Collaboration & Workflow Tools: ClickUp, Slack, Cursor, Zed, Trae</li>
           </ul>
         </div>
       </div>
@@ -56,25 +61,28 @@ export default function AboutPage() {
         <h2 className="text-3xl font-bold mb-6">Tech Stack</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {[
-            { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-            { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-            { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-            { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-            { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-            { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-            { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-            { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-            { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
-            { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-            { name: "Supabase", icon: "https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" },
-            { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" }
+            { name: "JavaScript", logo: "/tech/javascript.svg" },
+            { name: "TypeScript", logo: "/tech/typescript.svg" },
+            { name: "Python", logo: "/tech/python.svg" },
+            { name: "React", logo: "/tech/react.svg" },
+            { name: "Node.js", logo: "/tech/nodejs.svg" },
+            { name: "MySQL", logo: "/tech/mysql.svg" },
+            { name: "Redis", logo: "/tech/redis.svg" },
+            { name: "MongoDB", logo: "/tech/mongodb.svg" },
+            { name: "Django", logo: "/tech/django.svg" },
+            { name: "Flask", logo: "/tech/flask.svg" },
+            { name: "Django REST", logo: "/tech/django-rest.svg" },
+            { name: "Docker", logo: "/tech/docker.svg" },
+            { name: "Git", logo: "/tech/git.svg" },
+            { name: "Supabase", logo: "/tech/supabase.svg" },
+            { name: "Next.js", logo: "/tech/nextjs.svg" }
           ].map((tech, index) => (
             <div key={index} className="flex flex-col items-center p-4 border rounded-lg hover:shadow-md transition-all">
-              <img 
-                src={tech.icon} 
-                alt={tech.name} 
-                className="w-12 h-12 mb-2" 
-              />
+              <div className="w-12 h-12 mb-2 flex items-center justify-center">
+                <svg className="w-10 h-10" viewBox="0 0 128 128">
+                  <text x="64" y="76" textAnchor="middle" fontSize="60" fontWeight="bold">{tech.name.charAt(0)}</text>
+                </svg>
+              </div>
               <span className="text-sm font-medium">{tech.name}</span>
             </div>
           ))}
