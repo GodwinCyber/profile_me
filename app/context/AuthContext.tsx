@@ -17,6 +17,11 @@ type AuthContextType = {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
+/**
+ * Provides authentication context to its children components.
+ * It manages the user state and provides functions for login, register, and logout.
+ * This is a mock implementation and does not perform real authentication.
+ */
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User>(null);
 
@@ -25,7 +30,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setUser({
       id: "1",
       name: "Demo User",
-      email: email
+      email: email,
     });
   };
 
@@ -34,7 +39,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setUser({
       id: "1",
       name: name,
-      email: email
+      email: email,
     });
   };
 
@@ -49,6 +54,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   );
 }
 
+/**
+ * A custom hook to access the authentication context.
+ * It ensures that the hook is used within an AuthProvider.
+ * It provides access to the user object and authentication functions.
+ */
 export function useAuth() {
   const context = useContext(AuthContext);
   if (context === undefined) {

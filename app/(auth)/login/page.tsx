@@ -3,10 +3,20 @@
 import Link from "next/link";
 import { useState } from "react";
 
+/**
+ * Renders the login page for users to authenticate.
+ * This component provides a form for email and password submission and links to the registration page.
+ * It's a client component that manages its own state for the form fields.
+ */
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  /**
+   * Handles the form submission for the login page.
+   * It prevents the default form submission behavior and logs the user's credentials.
+   * The actual authentication logic is yet to be implemented.
+   */
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Authentication logic will be implemented here
@@ -16,10 +26,12 @@ export default function LoginPage() {
   return (
     <div className="max-w-md mx-auto mt-8 p-6 border rounded-lg shadow-md">
       <h1 className="text-2xl font-bold mb-6 text-center">Login</h1>
-      
+
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
+          <label htmlFor="email" className="block text-sm font-medium mb-1">
+            Email
+          </label>
           <input
             type="email"
             id="email"
@@ -31,7 +43,9 @@ export default function LoginPage() {
           />
         </div>
         <div>
-          <label htmlFor="password" className="block text-sm font-medium mb-1">Password</label>
+          <label htmlFor="password" className="block text-sm font-medium mb-1">
+            Password
+          </label>
           <input
             type="password"
             id="password"
@@ -49,9 +63,14 @@ export default function LoginPage() {
           Sign In
         </button>
       </form>
-      
+
       <div className="mt-4 text-center text-sm">
-        <p>Don&apos;t have an account? <Link href="/register" className="text-blue-600 hover:underline">Register</Link></p>
+        <p>
+          Don&apos;t have an account?{" "}
+          <Link href="/register" className="text-blue-600 hover:underline">
+            Register
+          </Link>
+        </p>
       </div>
     </div>
   );

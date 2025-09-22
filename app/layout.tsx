@@ -14,10 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Stephen | Portfolio",
+  title: "Godwin | Portfolio",
   description: "Personal portfolio website showcasing projects and skills",
 };
 
+/**
+ * The root layout for the entire application.
+ * It sets up the HTML structure, includes the Navbar, and wraps the page content.
+ * It also configures the fonts and metadata for the site.
+ */
 export default function RootLayout({
   children,
 }: Readonly<{
