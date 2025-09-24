@@ -1,21 +1,19 @@
 import Image from "next/image";
 
 const techStack = [
-  { name: "JavaScript", logo: "/tech/javascript.svg" },
-  { name: "TypeScript", logo: "/tech/typescript.svg" },
-  { name: "Python", logo: "/tech/python.png" },
-  { name: "React", logo: "/tech/react.png" },
-  { name: "Node.js" },
-  { name: "MySQL" },
-  { name: "Redis" },
-  { name: "MongoDB" },
-  { name: "Django", logo: "/tech/django.png" },
-  { name: "Flask", logo: "/tech/flask.png" },
-  { name: "Django REST", logo: "/tech/django-rest.png" },
-  { name: "Docker" },
-  { name: "Git" },
-  { name: "Supabase" },
-  { name: "Next.js", logo: "/tech/nextjs.png" },
+  { name: "JavaScript", logo: "/tech_logos/javascript.svg" },
+  { name: "TypeScript", logo: "/tech_logos/typescript.svg" },
+  { name: "Python", logo: "/tech_logos/python.svg" },
+  { name: "Node.js", logo: "/tech_logos/nodejs.svg" },
+  { name: "MySQL", logo: "/tech_logos/mysql.svg" },
+  { name: "Redis", logo: "/tech_logos/redis.svg" },
+  { name: "MongoDB", logo: "/tech_logos/mongodb.svg" },
+  { name: "Django", logo: "/tech_logos/django.svg" },
+  { name: "Flask", logo: "/tech_logos/flask.svg" },
+  { name: "Docker", logo: "/tech_logos/docker.svg" },
+  { name: "Git", logo: "/tech_logos/git.svg" },
+  { name: "Supabase", logo: "/tech_logos/supabase.svg" },
+  { name: "Next.js", logo: "/tech_logos/nextjs.svg" },
 ];
 
 /**

@@ -23,7 +23,7 @@ export default function Home() {
             <Button size="lg">Contact Me</Button>
           </Link>
           <Link href="/projects">
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="secondary">
               View Projects
             </Button>
           </Link>

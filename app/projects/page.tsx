@@ -28,7 +28,7 @@ export default function ProjectsPage() {
         "Redis",
       ],
       image: "/images/vendstash.png",
-      github: "https://vendstash.com/",
+      website: "https://vendstash.com/",
       //demo: "https://secure-auth-demo.example.com"
     },
     {
@@ -47,7 +47,7 @@ export default function ProjectsPage() {
         "Sentry",
       ],
       //image: "/project-scanner.svg",
-      github: "https://vendor.chopapp.co.uk/",
+      website: "https://vendor.chopapp.co.uk/",
       //demo: null
     },
     {
@@ -67,7 +67,7 @@ export default function ProjectsPage() {
         "Clerk Authentication",
       ],
       image: "/images/finTracker.png",
-      github: "https://financial-tracker-lac.vercel.app/",
+      website: "https://financial-tracker-lac.vercel.app/",
       demo: "https://studio.youtube.com/video/lSV7hSNlDy0/edit",
     },
     {
@@ -77,7 +77,7 @@ export default function ProjectsPage() {
         "This is a collaborative group project focused on developing a personalized music recommendation system",
       technologies: ["Next.js", "Supabase", "Hono.js", "Tailwind CSS"],
       image: "/images/rythmfindme.png",
-      github: "https://rythmfindmi.vercel.app/",
+      website: "https://rythmfindmi.vercel.app/",
       demo: "https://studio.youtube.com/video/BHaFjbD5-8k/edit",
     },
   ];
@@ -139,12 +139,12 @@ export default function ProjectsPage() {
               </div>
               <div className="flex gap-4 mt-4">
                 <Link
-                  href={project.github}
+                  href={project.website}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Button variant="default" size="sm">
-                    GitHub
+                    Website
                   </Button>
                 </Link>
                 {project.demo && (

@@ -36,7 +36,7 @@ This is a personal portfolio website built with Next.js to showcase my projects 
     npm install
     ```
 
-3.  Set up your environment variables. Create a `.env.local` file in the root of the project and add the following variables:
+3.  Set up your environment variables. Create a `.env` file in the root of the project and add the following variables:
 
     ```
     NEXT_PUBLIC_SUPABASE_URL=your_supabase_url

@@ -255,7 +255,7 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="hover:underline"
                 >
-                  GitHub
+                  Github
                 </Link>
               </div>
 
