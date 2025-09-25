@@ -1,4 +1,4 @@
-import { serve } from "std/http/server.ts";
-import { handler } from "./handler.ts";
+// import { serve } from "std/http/server.ts";
+// import { handler } from "./handler.ts";
 
-serve(handler);
+// serve(handler);

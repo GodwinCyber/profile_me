@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 /**
@@ -10,7 +9,6 @@ import { useState } from "react";
  * It uses the `usePathname` hook to highlight the active link and `useState` to manage the mobile menu toggle.
  */
 const Navbar = () => {
-  const pathname = usePathname();
   const [toggle, setToggle] = useState(false);
 
   const navItems = [

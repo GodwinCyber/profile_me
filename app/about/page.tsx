@@ -32,17 +32,17 @@ export default function AboutPage() {
           Personal Introduction
         </h2>
         <p className="text-lg mb-4">
-          I'm Godwin, an experienced Software Engineer with a strong background
-          in building robust and scalable applications for both web and mobile.
-          My work spans FinTech and SaaS environments, where I focus on
-          delivering secure, efficient, and reusable solutions. I'm skilled in
-          modern JavaScript stacks and Python-based technologies, with deep
-          expertise in database modeling and management-critical for financial
-          and enterprise-grade systems.
+          I&apos;m Godwin, an experienced Software Engineer with a strong
+          background in building robust and scalable applications for both web
+          and mobile. My work spans FinTech and SaaS environments, where I focus
+          on delivering secure, efficient, and reusable solutions. I&apos;m
+          skilled in modern JavaScript stacks and Python-based technologies,
+          with deep expertise in database modeling and management-critical for
+          financial and enterprise-grade systems.
         </p>
         <p className="text-lg">
           Having contributed to high-impact platforms and cyber-resilient
-          infrastructures, I'm committed to continuous improvement,
+          infrastructures, I&apos;m committed to continuous improvement,
           adaptability, and creating high-quality solutions that prioritize
           performance, security, and user experience. With expertise in backend
           engineering and full-stack development, I bring a strong focus on

@@ -126,7 +126,7 @@ export default function ContactPage() {
                 Message Sent!
               </h3>
               <p className="text-green-700 mb-4">
-                Thank you for reaching out. I'll get back to you as soon as
+                Thank you for reaching out. I&apos;ll get back to you as soon as
                 possible.
               </p>
               <Button onClick={() => setSubmitSuccess(false)}>
